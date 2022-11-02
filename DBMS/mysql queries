@@ -1,0 +1,11 @@
+create database bank_accounts;
+use bank_accounts;
+create table accounts (
+    -> a_no int primary key,
+    -> name varchar(50),
+    -> city varchar(20),
+    -> phone_no bigint,
+    -> username varchar(20),
+    -> pass_word varchar(20),
+    -> balance int
+    -> );
