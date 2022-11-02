@@ -1,0 +1,34 @@
+mysql> create database bank_accounts;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> use bank_accounts;
+Database changed
+mysql> show tables;
+Empty set (0.02 sec)
+
+
+mysql> create table accounts
+    -> (
+    -> a_no int primary key,
+    -> name varchar(50),
+    -> city varchar(20),
+    -> phone_no bigint,
+    -> username varchar(20),
+    -> pass_word varchar(20),
+    -> balance int
+    -> );
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> desc accounts;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| a_no      | int         | NO   | PRI | NULL    |       |
+| name      | varchar(50) | YES  |     | NULL    |       |
+| city      | varchar(20) | YES  |     | NULL    |       |
+| phone_no  | bigint      | YES  |     | NULL    |       |
+| username  | varchar(20) | YES  |     | NULL    |       |
+| pass_word | varchar(20) | YES  |     | NULL    |       |
+| balance   | int         | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+7 rows in set (0.01 sec)
